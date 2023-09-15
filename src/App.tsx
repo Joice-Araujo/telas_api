@@ -1,6 +1,8 @@
 import {BrowserRouter} from "react-router-dom"
 import { AppRoutes } from "./routes/Routes";
 import { AppThemeProvider } from "./shered/contexts";
+import { MenuSuperior } from "./shered/components";
+
 
 
 
@@ -13,11 +15,17 @@ import { AppThemeProvider } from "./shered/contexts";
 
     <BrowserRouter>
     
+    <MenuSuperior>
+
     <AppRoutes/>
+
+    </MenuSuperior>
+
+
     
     </BrowserRouter>
      
-    </AppThemeProvider>
+    </AppThemeProvider> 
     
   );
 }
