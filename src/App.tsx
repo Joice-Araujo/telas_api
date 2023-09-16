@@ -8,11 +8,15 @@ import { MenuSuperior } from "./shered/components";
 
 
 
+
  export const  App = () => {
   return (
 
     <AppThemeProvider>
 
+    
+
+    
     <BrowserRouter>
     
     <MenuSuperior>
@@ -24,8 +28,9 @@ import { MenuSuperior } from "./shered/components";
 
     
     </BrowserRouter>
+    
      
-    </AppThemeProvider> 
+   </AppThemeProvider> 
     
   );
 }

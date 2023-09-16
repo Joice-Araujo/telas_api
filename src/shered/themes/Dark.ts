@@ -15,15 +15,16 @@ export const DarkTheme = createTheme({
         },
 
         secondary:{
-            main: grey[800],  
+            main: "#58595B",  
             dark: grey[700],     
             light: blue[500],
             contrastText: '#ffffff',
         },
 
         background:{
-            default: '#292A2D',  //usado no fundo do site
-            paper:'#1E1E1E' ,    //usado dentro de card
+            default: grey[700],  //usado no fundo do site
+            paper: grey[700],
+            
             
         }
     }

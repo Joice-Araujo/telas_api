@@ -15,8 +15,8 @@ export const LightTheme = createTheme({
         },
 
         secondary:{
-            main: grey[800],  
-            dark: grey[700],     
+            main: "#ACB3BA",  
+            dark: grey[300],     
             light: blue[500],
             contrastText: '#ffffff',
         },

@@ -1,6 +1,6 @@
 
 import { Routes, Route, Navigate } from "react-router-dom";
-import { useAppThemeContext } from "../shered/contexts";
+// import { useAppThemeContext } from "../shered/contexts";
 import { Home } from "../pages";
 
 
@@ -9,7 +9,7 @@ export  const AppRoutes = () =>{
 
     return(
         <Routes>
-            <Route path="/pagina-inicial" element={<Home/>}/>
+            <Route path="/pagina-inicial" element={<Home/>}  />
 
             <Route path="/home" element={<Navigate to="/home"/>}/>
 
