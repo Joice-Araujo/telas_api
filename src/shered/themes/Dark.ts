@@ -24,6 +24,7 @@ export const DarkTheme = createTheme({
         background:{
             default: '#292A2D',  //usado no fundo do site
             paper:'#1E1E1E' ,    //usado dentro de card
+            
         }
     }
 });

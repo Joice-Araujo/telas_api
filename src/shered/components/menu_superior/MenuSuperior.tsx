@@ -1,5 +1,12 @@
-import { AppBar, Box, Button, Container, Grid, Stack, Toolbar, colors, useTheme} from "@mui/material"
+
+import { AppBar, Box, Button, Container, Grid, Stack, Toolbar, useTheme} from "@mui/material"
 import { ReactNode } from "react"
+import  Logo from "../img/Proton.png";
+
+
+
+
+
 
 
 
@@ -20,7 +27,11 @@ export const MenuSuperior: React.FC <{ children: ReactNode }> = ({ children}) =>
 
                         <Grid container direction="row" justifyContent="space-between" alignItems="center">
 
-                            <Grid item>Proton</Grid>
+                            <Grid item>
+
+                            <img src={Logo} width={120}/>  
+
+                            </Grid>
 
                             <Grid item>
                             
