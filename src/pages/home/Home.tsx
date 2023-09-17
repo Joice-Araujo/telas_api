@@ -21,7 +21,7 @@ export const Home = () => {
         <div>
 
             <Box display="flex" alignItems="center" justifyContent="center" maxHeight="100vh"
-                flexDirection="column" gap={theme.spacing(4)} marginTop={theme.spacing(3)}>
+                flexDirection="column" gap={theme.spacing(1)} marginTop={theme.spacing(3)}>
 
 
                 <Paper sx={{ padding: 2, borderRadius: 5 }} >
