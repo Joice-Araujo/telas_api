@@ -12,7 +12,7 @@ export const Home = () => {
         <div>
 
             <Box   display="flex" alignItems="center" justifyContent="center" maxHeight="100vh"
-             flexDirection="column" gap={theme.spacing(4)}  marginTop={theme.spacing(5)}>
+             flexDirection="column" gap={theme.spacing(4)}  marginTop={theme.spacing(2)}>
 
 
             <Paper  sx={{ padding: 2, borderRadius: 5 }} color= "secondary">
@@ -145,131 +145,96 @@ export const Home = () => {
             </Paper>
 
             <Paper  sx={{ padding: 2, borderRadius: 5 }} color= "secondary">
-                <Typography variant="h5">Estimativa de Projetos</Typography>
-                <Grid container spacing={2} alignItems="center">
+                <Typography variant="h5">Visão Geral</Typography>
 
-                    <Grid item>
+                {/* <Grid container spacing={2} alignItems="center"> */}
 
-                        <Card sx={{ minWidth: 180 }}>
-                            <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
+                    <Box display="flex" flexDirection="row" gap={theme.spacing(3)}>
 
-                                <CardHeader action={
-                                    <IconButton aria-label="atrasados">
-                                        <RunningWithErrorsIcon sx={{ width: 38, height: 38, alignItems: "center" }} />
-                                    </IconButton>
+                        <Box  display="flex" flexDirection="row" gap={theme.spacing(3)} >
 
-                                } />
+                            <Grid item>
 
-                                <Typography variant="h5" component="div">
-                                    Atrasados
-                                </Typography>
-                                <Typography variant="h5" component="div">
-                                    be-nev-o-lent
-                                </Typography>
+                                <Card sx={{ maxWidth: 250 }}>
+                                    <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
 
-                            </CardContent>
+                                        <CardHeader action={
+                                            <IconButton aria-label="atrasados">
+                                                <RunningWithErrorsIcon sx={{ width: 38, height: 38, alignItems: "center" }} />
+                                            </IconButton>
 
-                        </Card>
-                    </Grid>
+                                        } />
 
-                    <Grid item>
+                                        <Typography variant="h5" component="div">
+                                            Atrasados
+                                        </Typography>
+                                        <Typography variant="h5" component="div">
+                                            be-nev-o-lent
+                                        </Typography>
 
-                        <Card sx={{ minWidth: 180 }}>
-                            <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
+                                    </CardContent>
 
-                                <CardHeader action={
-                                    <IconButton aria-label="atrasados">
-                                        <RunningWithErrorsIcon sx={{ width: 38, height: 38, alignItems: "center" }} />
-                                    </IconButton>
+                                </Card>
+                            </Grid>
 
-                                } />
+                            <Grid item>
 
-                                <Typography variant="h5" component="div">
-                                    Atrasados
-                                </Typography>
-                                <Typography variant="h5" component="div">
-                                    be-nev-o-lent
-                                </Typography>
+                                <Card sx={{ minWidth: 180 }}>
+                                    <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
 
-                            </CardContent>
+                                        <CardHeader action={
+                                            <IconButton aria-label="atrasados">
+                                                <RunningWithErrorsIcon sx={{ width: 38, height: 38, alignItems: "center" }} />
+                                            </IconButton>
 
-                        </Card>
-                    </Grid>
+                                        } />
 
-                    <Grid item>
+                                        <Typography variant="h5" component="div">
+                                            Atrasados
+                                        </Typography>
+                                        <Typography variant="h5" component="div">
+                                            be-nev-o-lent
+                                        </Typography>
 
-                        <Card sx={{ minWidth: 180 }}>
-                            <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
+                                    </CardContent>
 
-                                <CardHeader action={
-                                    <IconButton aria-label="atrasados">
-                                        <RunningWithErrorsIcon sx={{ width: 38, height: 38, alignItems: "center" }} />
-                                    </IconButton>
+                                </Card>
+                            </Grid>
 
-                                } />
+                        </Box>
 
-                                <Typography variant="h5" component="div">
-                                    Atrasados
-                                </Typography>
-                                <Typography variant="h5" component="div">
-                                    be-nev-o-lent
-                                </Typography>
+                        <Box  display="flex" flexDirection="column" gap={theme.spacing(4.4)} >
 
-                            </CardContent>
+                            <Grid item>
 
-                        </Card>
-                    </Grid>
+                                <Card>
+                                    <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
 
-                    <Grid item>
+                                    <Typography variant="h6" component="div"> Mais entregas </Typography>
 
-                        <Card sx={{ minWidth: 180 }}>
-                            <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
+                                    </CardContent>
 
-                                <CardHeader action={
-                                    <IconButton aria-label="atrasados">
-                                        <RunningWithErrorsIcon sx={{ width: 38, height: 38, alignItems: "center" }} />
-                                    </IconButton>
+                                </Card>
+                            </Grid>
 
-                                } />
+                            <Grid item>
 
-                                <Typography variant="h5" component="div">
-                                    Atrasados
-                                </Typography>
-                                <Typography variant="h5" component="div">
-                                    be-nev-o-lent
-                                </Typography>
+                                <Card sx={{ maxWidth: 180 }}>
+                                    <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
 
-                            </CardContent>
+                                    <Typography variant="h6" component="div"> Mais entregas </Typography>
 
-                        </Card>
-                    </Grid>
+                                        
+                                    </CardContent>
 
-                    <Grid item>
+                                </Card>
+                            </Grid>
 
-                        <Card sx={{ minWidth: 180 }}>
-                            <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
+                        </Box>
+                    
+                    </Box>
 
-                                <CardHeader action={
-                                    <IconButton aria-label="atrasados">
-                                        <RunningWithErrorsIcon sx={{ width: 38, height: 38, alignItems: "center" }} />
-                                    </IconButton>
-
-                                } />
-
-                                <Typography variant="h5" component="div">
-                                    Atrasados
-                                </Typography>
-                                <Typography variant="h5" component="div">
-                                    be-nev-o-lent
-                                </Typography>
-
-                            </CardContent>
-
-                        </Card>
-                    </Grid>
-
-
-                </Grid>
+                {/* </Grid> */}
 
             </Paper>
 
