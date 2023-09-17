@@ -182,18 +182,17 @@ export const Home = () => {
                                 <Card sx={{ minWidth: 180 }}>
                                     <CardContent sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
 
-                                        <CardHeader action={
-                                            <IconButton aria-label="atrasados">
-                                                <RunningWithErrorsIcon sx={{ width: 38, height: 38, alignItems: "center" }} />
-                                            </IconButton>
-
-                                        } />
 
                                         <Typography variant="h5" component="div">
-                                            Atrasados
+                                            Média de 
                                         </Typography>
+
+                                        <Typography variant="h2" component="div">
+                                          44H
+                                        </Typography>
+
                                         <Typography variant="h5" component="div">
-                                            be-nev-o-lent
+                                         por projeto
                                         </Typography>
 
                                     </CardContent>
