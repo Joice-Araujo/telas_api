@@ -39,8 +39,20 @@ export const NovoProjeto = () => {
 
                             <Grid item>
 
-                                <TextField id="standard-multiline-static" label="Descrição" multiline rows={3}
+                                <TextField id="standard-multiline-static" label="Descrição" multiline rows={2}
                                     variant="standard" sx={{width:"70vw"}} />
+
+                            </Grid>
+
+                            <Grid item>
+
+                                <Box>
+
+                                <div>colocar um card ou um paper com scrollbar aqui</div>
+                                </Box>
+
+
+
 
                             </Grid>
 
