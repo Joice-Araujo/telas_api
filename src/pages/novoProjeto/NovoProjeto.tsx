@@ -14,35 +14,38 @@ export const NovoProjeto = () => {
         
 
        
-        <><Grid display="flex" alignItems="center" justifyContent="center" maxHeight="100vh">
+        // <><Grid display="flex" alignItems="center" justifyContent="center" maxHeight="100vh" sx={{gap:3}}>
 
+            <Box display="flex" alignItems="center" justifyContent="center" maxHeight="100vh"
+            flexDirection="column" sx={{gap:3}}>
 
-            <Paper sx={{mt:3, padding:3, borderRadius: 5,  width: '1000px', height: '480px'}} 
+            <Paper sx={{mt:3, padding:3, borderRadius: 5,  width: '1000px', height: '480px', gap: 3}} 
      >
 
                 <Typography variant="h4" color="primary">Novo Projeto</Typography>
 
+         
             
-                    <Box>
+                    <Box  display="flex" alignItems="center"  maxHeight="100vh" flexDirection="column">
 
 
-                        <Box display="flex" flexDirection="column">
+                        <Box display="flex" flexDirection="column" sx={{gap:3}}>
 
 
                             <Grid item>
-                                <TextField id="nome-projeto" label="Nome:" variant="standard" />
+                                <TextField id="nome-projeto" label="Nome:" variant="standard" sx={{width:"70vw"}} />
 
                             </Grid>
 
                             <Grid item>
 
-                                <TextField id="standard-multiline-static" label="Descrição" multiline rows={4}
-                                    variant="standard" />
+                                <TextField id="standard-multiline-static" label="Descrição" multiline rows={3}
+                                    variant="standard" sx={{width:"70vw"}} />
 
                             </Grid>
 
                             <Grid item>
-                                <Button variant="contained" startIcon={<AddIcon />}>Adicionar Etapa</Button>
+                                <Button variant="contained" startIcon={<AddIcon />} sx={{width:"70vw"}}>Adicionar Etapa</Button>
 
                             </Grid>
 
@@ -52,7 +55,7 @@ export const NovoProjeto = () => {
 
 
 
-                        <Box display="flex" flexDirection="row" >
+                        <Box display="flex" flexDirection="row" alignItems="flex-end" sx={{ gap: 80, marginTop: 20}}>
 
                             <Button variant="contained" startIcon={<DeleteIcon />} sx={{background:"#292A2D",color:"white"}}>Descartar</Button>
                             <Button variant="contained" startIcon={<AddIcon />}>Criar Projeto</Button>
@@ -68,7 +71,9 @@ export const NovoProjeto = () => {
 
             </Paper>
 
-        </Grid></>
+            </Box>
+
+        // </Grid></>
         
         
         
